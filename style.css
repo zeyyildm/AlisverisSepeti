@@ -1,0 +1,241 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pembeyer {
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    background-color: #f1d6d5;
+    display: flex;
+    align-items: center;
+}
+
+.yazi {
+    color: whitesmoke;
+    font-size: 2em;
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+}
+
+#form {
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-top: 1px solid rgb(143, 116, 116, 0.2);
+    border-bottom: 1px solid rgb(143, 116, 116, 0.2);
+    justify-content: center;
+    margin-left: 500px;
+}
+
+#aramaText {
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0,0.2);
+    width: 500px;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border-style: none;
+    margin-left: 5px;
+}
+
+.icon-button:hover {
+    opacity: 0.5;
+}
+
+.urunler-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.urun-listesi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.urunler {
+    position: relative;
+    margin: 40px;
+    border-radius: 5px;
+    background-color: #fff9f5;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.urunler img {
+    width: 300px;
+    height: 400px;
+    z-index:1;
+}
+
+
+.logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 600px;
+}
+
+.urun-fiyat {
+    width: 80px;
+    height: 50px;
+    border: 1px solid rgba(9, 9, 9, 0.1);
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: rgba(9, 9, 9, 0.5);
+    text-align: center;
+    position: relative;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cizili {
+    text-decoration: line-through;
+    color: rgba(9, 9, 9, 0.5);
+}
+
+.urun-isim {
+    border: 1px solid rgba(9, 9, 9, 0.1);
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: -50px;
+    margin-left: 45px;
+    text-align: center;
+    font-family: "Advent Pro", sans-serif;
+}
+
+.icon2-button{
+    position: absolute; /* İkonu kesin konumlandırmak için */
+    bottom: 10px; /* Fotoğrafın altından uzaklığı */
+    right: 10px; /* Fotoğrafın sağından uzaklığı */
+    width: 40px; /* İkonun boyutu */
+    height: 40px;
+    color: black; /* İkon rengi */
+    background-color: white; /* Buton arka plan rengi */
+    border: none; /* Kenarlık kaldırıldı */
+    border-radius: 50%; /* Yuvarlak buton */
+    display: flex; /* İçindeki ikonu ortalamak için */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    z-index: 10;
+}
+
+.icon2-button i {
+    transition: transform 0.2s ease; /* Geçiş efekti için */
+}
+
+.icon2-button:hover i {
+    transform: scale(1.2); /* İkonu %20 büyüt */
+}
+
+.icon3-button{
+
+    bottom: 40px; /* Fotoğrafın altından uzaklığı */
+    right: 40px; /* Fotoğrafın sağından uzaklığı */
+    width: 50px; /* İkonun boyutu */
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    color: black; /* İkon rengi */
+    background-color: white; /* Buton arka plan rengi */
+    border-radius: 50%; /* Yuvarlak buton */
+    display: flex; /* İçindeki ikonu ortalamak için */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    z-index: 10;
+
+    right: 3;
+    margin-left: auto;
+   
+}
+
+.cardTab{
+    width: 400px;
+    background-color: antiquewhite;
+    color: black;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.cardTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cardTab .btn{
+    display: grid;
+    grid-auto-columns:repeat(2,1fr) ;
+}
+
+.cardTab .btn button{
+    background-color: bisque;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    margin-top: ;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Yarım saydam siyah arka plan */
+    display: none; /* Başlangıçta gizli */
+    z-index: 9; /* Diğer içeriklerin üstünde olmasını sağlar */
+}
+
+.cardTab {
+    display: none; /* Başlangıçta gizli */
+    /* Diğer stil ayarlarınızı buraya ekleyin */
+    z-index: 10; /* Overlay'in üstünde olmasını sağlar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
